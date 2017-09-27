@@ -6,18 +6,18 @@ $comb=factorial($m)/(factorial($m-$s)*factorial($s));
 return $comb;
 }
 
-function variancia($lista){;
-$sumc=0;
-for ($i=0;$i<count($lista);$i++) { 
-$sumc=$sumc+$lista[$i]*$lista[$i]; 
-    }
-$var=($sumc-count($lista)*promedio($lista)*promedio($lista))/(count($lista)-1);
-return $var;
+function factorial($m)
+{
+$fact=1;
+for ($i=1;$i<=$m;$i++){
+$fact=$fact*$i;}
+return $fact;
 }
 
-function cv($lista){
-$cv=sqrt(variancia($lista)*100/promedio($lista));
-return $cv;
-} 
+function binom($m,$p,$r)
+{
+$binom=combinatoria($m,$r)*pow($p,$r)*pow((1-$p),($m-$r));
+return $binom;
+	}
 
 ?>
