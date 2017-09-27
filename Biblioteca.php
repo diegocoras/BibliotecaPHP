@@ -20,8 +20,4 @@ $binom=combinatoria($m,$r)*pow($p,$r)*pow((1-$p),($m-$r));
 return $binom;
 	}
 
-
-
-
-
 ?>
